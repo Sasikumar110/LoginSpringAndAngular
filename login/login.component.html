@@ -1,0 +1,21 @@
+<button routerLink="/displaydata" class="btn btn-danger">Table all datas</button>
+<div class="container">
+    <div class="card">
+      <h1>{{title}}</h1>
+      <div id="forms">
+        <form #userForm="ngForm" (ngSubmit)="loginuser(userForm.value)">
+          <div class="mb-3">
+            Email <input type="text" ngModel id="email" name="email" class="form-control" placeholder="Enter the mailId">
+          </div>
+          <div class="mb-3">
+            password <input type="password" ngModel  name="password" id="password" class="form-control" placeholder="******">
+          </div>
+          <div class="mb-3">
+            username <input type="text" ngModel id="username" name="username" class="form-control" placeholder="Enter the username">
+          </div>
+          <input type="submit" class="btn btn-success" value="Register" >
+          <a routerLink="/">Already have Account? Login</a>
+        </form>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,16 @@
+<div class="container">
+    <button routerLink="/displaydata" class="btn btn-danger">Data details</button>
+    <h1 align="center">Login Page</h1>
+    <div class="card form-group">
+        <form #loginForm="ngForm" style="margin-left:20px ;" (ngSubmit)="loginProcess()">
+            <div class="form-group">
+            EMAIL <input type="text"  name="email" id="email" class="form-control" [(ngModel)]="user.email" placeholder="example@gmail.com">
+        </div>
+        <div class="form-group">
+            PASSWORD <input type="password"  name="password" id="password" class="form-control" [(ngModel)]="user.password" placeholder="********"> <br>
+        </div>
+            <button type="submit" class="btn btn-primary">Login</button><br><br>
+            <a routerLink="/register">New user? Click here for SignUP</a>
+        </form>
+    </div>
+</div>
