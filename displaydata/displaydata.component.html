@@ -1,0 +1,16 @@
+<h1 align="center">Database Table Datas</h1>
+<table class="table table-bordered table-dark table-striped-primary">
+    <tr>
+        <th>ID</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Username</th>
+    </tr>
+    <tr *ngFor="let tada of tabledata">
+        <td>{{tada.id}}</td>
+        <td>{{tada.email}}</td>
+        <td>{{tada.password}}</td>
+        <td>{{tada.username}}</td>
+    </tr>
+</table>
+<button type="submit" routerLink="/login" class="btn btn-primary" >Login Page</button>
